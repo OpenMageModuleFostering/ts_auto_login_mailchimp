@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Pereira, Thiago Santos
+* http://thiagosantos.com/
+*
+* @category   ThiagoSantos
+* @package    ThiagoSantos_LoginAutomatico
+*/
+-->
+<config>
+      <modules>
+            <ThiagoSantos_LoginAutomatico>
+                  <version>0.0.21</version>
+            </ThiagoSantos_LoginAutomatico>
+      </modules>
+      <global>
+            <helpers>
+                  <loginautomatico>
+                        <class>ThiagoSantos_LoginAutomatico_Helper</class>
+                  </loginautomatico>
+                  <monkey>
+                        <rewrite>
+                              <data>ThiagoSantos_LoginAutomatico_Helper_MonkeyData</data>
+                        </rewrite>
+                  </monkey>
+            </helpers>
+            <models>
+                  <loginautomatico>
+                        <class>ThiagoSantos_LoginAutomatico_Model</class>
+                  </loginautomatico>
+            </models>
+            <!-- Eventos -->
+            <events>
+                  <controller_action_layout_render_before>
+                        <observers>
+                              <thiagosantos_loginautomatico_pageload_observer>
+                                    <type>singleton</type>
+                                    <class>ThiagoSantos_LoginAutomatico_Model_Pageload_Observer</class>
+                                    <method>_init</method>
+                              </thiagosantos_loginautomatico_pageload_observer>
+                        </observers>
+                  </controller_action_layout_render_before>
+            </events>
+      </global>
+      <frontend>
+            <routers>
+                  <loginautomatico>
+                        <use>standard</use>
+                        <args>
+                              <module>ThiagoSantos_LoginAutomatico</module>
+                              <frontName>la</frontName>
+                        </args>
+                  </loginautomatico>
+            </routers>
+      </frontend>
+
+</config>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+    <name>TS_Auto_Login_MailChimp</name>
+    <version>1.0.24</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>With this free extension your users will enter in your store logged in.</summary>
+    <description>With this extension you will be able to export a custom hash from Magento to Merge Tag on MailChimp and use as a parameters to log in your customer on you store, after they click them on e-mail.&#xD;
+&#xD;
+This extesion use Magento Crypt to crypt and decrypt the value of the Merge Tag. For those don't knew about it, each Magento installation have a unique phrase used to crypt some data. So "thiagosantos" string crypted using my Magento instalation will have a diferent return string, of doing the same on your own store. This make my extension much secured and very usefull, for AutoLogin</description>
+    <notes>Fix: &#xD;
+- Stop to log in user even if there were a error to identify a user.&#xD;
+- updated and compatible with MageMonkey - MailChimp Integration by ebizmarts 1.0.23&#xD;
+</notes>
+    <authors><author><name>Thiago Santos</name><user>thiagosantos</user><email>thiagorow@gmail.com</email></author></authors>
+    <date>2013-01-22</date>
+    <time>00:38:35</time>
+    <contents><target name="magelocal"><dir name="ThiagoSantos"><dir name="LoginAutomatico"><dir name="Helper"><file name="Data.php" hash="16e7f6ff44e1b4b2d232bebb5ea796e7"/><file name="MonkeyData.php" hash="cb3739261a98c81bd5373ee75e9af970"/></dir><dir name="Model"><dir name="Pageload"><file name="Observer.php" hash="e3dd7a6e44ef7530eaad4c45e6119aa8"/></dir></dir><dir name="controllers"><file name="AController.php" hash="ac825fbe7d20a48094b838d8bdd45a9b"/></dir><dir name="etc"><file name="config.xml" hash="3648f71839bf96a387702dda6dae9d8a"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="ThiagoSantos_LoginAutomatico.xml" hash="0329b656ce44c8b877d5ff267fbd2406"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php><package><name>MageMonkey</name><channel>community</channel><min>1.0.22</min><max>1.0.23</max></package></required></dependencies>
+</package>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Pereira, Thiago Santos
+* http://thiagosantos.com/ 
+*
+* @category   ThiagoSantos
+* @package    ThiagoSantos_LoginAutomatico
+*/
+-->
+<config>
+  <modules>
+          <ThiagoSantos_LoginAutomatico>
+                  <active>true</active>
+                  <codePool>local</codePool>
+          </ThiagoSantos_LoginAutomatico>
+  </modules>
+</config>

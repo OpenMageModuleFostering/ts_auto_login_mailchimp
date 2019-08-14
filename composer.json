@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/TS_Auto_Login_MailChimp",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "With this free extension your users will enter in your store logged in.",
+    "authors": [
+    {
+        "name": "Thiago Santos",
+        "email": "thiagorow@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
