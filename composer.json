@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/TS_Auto_Login_MailChimp",
+    "name": "openmage-module-fostering\/ts_auto_login_mailchimp",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
